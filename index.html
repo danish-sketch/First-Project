@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .outer-sec{
+            height: 100vh;
+            width: 100%;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(68,134,212,1) 100%);
+        }
+        .inner-sec{
+            background-color: aqua;
+            height: 350px;
+            margin: 0 40%;
+            position: relative;
+            top: 25%;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px;
+        }
+        .header h1,p{
+            text-align: center;
+            line-height: 25px;
+        }
+        .name input{
+            width: 100%;
+            margin: 2px;
+            padding: 5px;
+        }
+        .name label,.submit{
+            font-weight: 600;
+        }
+        .submit{
+            margin: 5px;
+            background-color: blue;
+            border: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            margin-left: 0px;
+            width: 100%;
+        }
+        .submit:hover{
+            background-color: rgb(34, 34, 189);
+            transition: all .3s ease-in;
+        }
+        .footer{
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-sec">
+        <div class="inner-sec">
+            <header class="header">
+                <h1>Signup</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+            <section class="name name">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter Full Name">
+            </section>
+                <section class="email name">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email">
+            </section>
+                <section class="password name">
+                <label for="password">Enter New Password</label>
+                <input type="password" id="password" placeholder="at least 8 characters">
+            </section>
+            <section class="submit name">
+                <input class="submit" type="submit" id="name" value="Create Account">
+            </section>
+            <footer class="footer">
+                Already have an Account? <a href="#">Login</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
