@@ -3,100 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danish Shaikh's Website</title>
+    <title>Danish Shaikh Website</title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-size: 100px;
         }
-        .outer-container{
-            height: 100vh;
+        .outer-box{
             width: 100%;
-            background: rgb(238,174,202);
-            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(68,134,212,1) 100%);
-            padding-top: 300px;
+            height: 200vh;
+            background: rgb(181,111,49);
+            background: radial-gradient(circle, rgba(181,111,49,1) 0%, rgba(68,134,212,0.2191001400560224) 100%);
+            padding-top: 60px;
         }
-
-        .inner-container{
-            height: 550px;
-            background-color:darkolivegreen;
-            width: 400px;
-            border-radius: 15px;
-            padding: 19px;
-            margin-left: 300px;
-        }
-        p{
-            text-align: center;
-        }
-        .bold{
-            font-size: 30px;
-        }
-        h1{
-            text-align: center;
-            font-weight: 700;
-            font-size: 50px;
+        .inner-box{
+            background-color:violet;
+            margin-left: 150px;
+            border-radius: 20px;
+            height: 2000px;
+            width: 40%;
+            padding: 50px;
         }
         input{
             width: 100%;
-            padding: 7px;
-            border-radius: 6px;
+            padding: 10px;
             border: none;
+            border-radius: 20px;
         }
-        .sec{
-            margin-top: 20px;
+        .header .head{
+            text-align: center;
         }
-        label{
-            font-weight: 700;
+        .headd{
+            text-align: center;
+        }
+        section{
+            margin-top: 30px;
+        }
+        .foot{
+            margin-top: 40px;
+            text-align: center;
         }
         #submit{
-            font-weight: 700;
-            background-color:darkcyan;
+            background-color: aqua;
+            margin-top: 40px;
         }
         #submit:hover{
-            background-color: rgb(41, 100, 100);
+            background-color:rgb(40, 183, 183) ;
+            transition: all 1s ease-in-out;
         }
-        
-        
-        
-
-
-
-
     </style>
 </head>
 <body>
-    <div class="outer-container">
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="header">
+               <h1 class="head"> Sign Up</h1>
+               <p class="headd">It just takes 30 seconds</p>
+            </header>
+            <main>
+                <section class="sec1">
+                    <label for="name">Enter Your Name</label>
+                    <input type="text" id="name" placeholder="Enter Full Name">
+                </section>
 
-        <div class="inner-container">
-        <header class="header">
-            <h1>Sign Up</h1>
-            <p class="bold">It just takes 30 seconds</p>
-        </header>
-        <section class="sec sec-1">
-            <label for="name">Full Name</label>
-            <input id="name" type="text" placeholder="Enter Full Name" required>
-        </section>
+                <section class="sec2">
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                </section>
 
-        <section class="sec sec-2">
-            <label for="email">Enter Your Email</label>
-            <input id="email" type="email" placeholder="Enter Your Email" required>
-        </section>
+                <section class="sec3">
+                    <label for="password">Enter Your Password</label>
+                    <input type="text" id="password" placeholder="Enter Your Password">
+                </section>
 
-        <section class="sec sec-3">
-            <label for="Password">Enter New Password</label>
-            <input id="Password" type="text" placeholder="at least 8 characters" required>
-        </section>
+                <section class="sec4">
+                    <label for="cpassword">Enter Your Confirm Password</label>
+                    <input type="password" id="cpassword" placeholder="Enter Your Confirm Password">
+                </section>
 
-        <section class="sec sec-4">
-            <label for="cPassword">Enter Confirm Password</label>
-            <input id="cPassword" type="password" placeholder="at least 8 characters" required>
-        </section>
-
-        <section>
-            <input id="submit" type="submit" value="submit" class="sec" >
-            <p class="sec">Already have an Account? <a href="#">Login</a></p>
-        </section>
+                <section class="sec5">
+                    <input id="submit" type="submit" value="submit">
+                </section>
+            </main>
+            <footer>
+                <p class="foot">Already have an Account?<a href="#">Login</a></p>
+            </footer>
         </div>
     </div>
 </body>
